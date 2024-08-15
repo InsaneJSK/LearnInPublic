@@ -1,0 +1,55 @@
+.p1{
+	background-image: url("../poem/our mysterious life/1-.jpg");
+	height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.p2{
+	background-image: url("../poem/our mysterious life/2-.jpg");
+	min-height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.p3{
+	background-image: url("../poem/our mysterious life/3-.jpg");
+	min-height: 600px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.p4{
+	background-image: url("../poem/our mysterious life/4-.jpg");
+	min-height: 500px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.p5{
+	background-image: url("../poem/our mysterious life/5-.jpg");
+	min-height: 400px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.p6{
+	background-image: url("../poem/our mysterious life/6-.jpg");
+	min-height: 400px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.p7{
+	background-image: url("../poem/our mysterious life/7-.jpg");
+	min-height: 400px; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
