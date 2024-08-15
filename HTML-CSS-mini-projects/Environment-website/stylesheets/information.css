@@ -1,0 +1,27 @@
+h1{
+	color: white;
+	font-size: +50;
+	text-align: center;
+}
+form{
+	color: white;
+	font-size: +36;
+	font-weight: bold;
+	margin-left: 20px
+}
+textarea{
+	border: solid 1px;
+	border-radius: 0px 25px 0px 25px;
+}
+body{
+	background-image: url(../images/information.jpg);
+}
+p, ol{
+	margin-left: 20px;
+	color: #FFFFFF;
+	font-size: +20;
+}
+textarea{
+	float: right;
+	margin-right: 580px;
+}
