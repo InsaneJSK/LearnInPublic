@@ -87,15 +87,121 @@ def line():
     b_submit.grid(row = 6, column = 1)
 
 def screen3():
-    pass
+    label2.pack_forget()
+    label3.pack_forget()
+    b_bar.pack_forget()
+    b_line.pack_forget()
 
 def file_dialog():
-    pass
+    global data_path
+    d_file_path=filedialog.askopenfilename()
+    data_path.set(d_file_path)
 
 def submit_bar():
-    pass
+    try:
+        if len(titlevalue.get()) < 1:
+            raise ValueError
+        global lis
+        lis = []
+        lis_data = []
+        lis_headings = []
+        try:
+            f = open(data_path.get(), "r")
+        except:
+            raise TypeError
+        for a in f:
+            if type(eval(a)) == type(lis_data):
+                lis.append(eval(a))
+                lis_data.append(eval(a))
+            else:
+                raise TypeError
+        if len(lis_data) <1:
+            raise TypeError
+        for a in lis_data:
+            if type(a[0]) == type(''):
+                lis_headings.append(lis_data[lis_data.index(a)].pop(0))
+            else:
+                raise TypeError
+        for a in lis_data:
+            for b in a:
+                if type(b) != type(1) and type(b) != type(1.1) and b != None:
+                    raise TypeError
+        screen4()
+        directory_b()
+
+    except TypeError:
+        root_error = tk.Tk()
+        label_error = tk.Label(root_error, text = "The file you gave is not \nas per the requirements. It must \nbe like the file 'SAMPLE.txt' \npresent in the same directory")
+        label_error.place(anchor = "center", relx=0.5, rely=0.5)
+        root_error.mainloop()
+
+    except ValueError:
+        root_error = tk.Tk()
+        label_error = tk.Label(root_error, text = "Title field must not be empty")
+        label_error.place(anchor = "center", relx=0.5, rely=0.5)
+        root_error.mainloop()
 
 def submit_line():
+    try:
+        if len(titlevalue.get()) < 1:
+            raise NameError
+        global lis
+        lis = []
+        lis_data = []
+        lis_headings = []
+        if x_min.get()>=x_max.get():
+            raise ValueError
+        try:
+            f = open(data_path.get(), "r")
+        except:
+            raise TypeError
+        for a in f:
+            if type(eval(a)) == type(lis_data):
+                lis.append(eval(a))
+                lis_data.append(eval(a))
+            else:
+                raise TypeError
+        if len(lis_data) <1:
+            raise TypeError
+        for a in lis_data:
+            if type(a[0]) == type(''):
+                lis_headings.append(lis_data[lis_data.index(a)].pop(0))
+            else:
+                raise TypeError
+        for a in lis_data:
+            for b in a:
+                if type(b) != type(1) and type(b) != type(1.1) and b != None:
+                    raise TypeError
+        screen4_()
+        directory_l()
+    except TypeError:
+        root_error = tk.Tk()
+        label_error = tk.Label(root_error, text = "The file you gave is not \nas per the requirements. It must \nbe like the file 'SAMPLE.txt' \npresent in the same directory")
+        label_error.place(anchor = "center", relx=0.5, rely=0.5)
+        root_error.mainloop()
+
+    except NameError:
+        root_error = tk.Tk()
+        label_error = tk.Label(root_error, text = "Title field must not be empty")
+        label_error.place(anchor = "center", relx=0.5, rely=0.5)
+        root_error.mainloop()
+
+    except ValueError:
+        root_error = tk.Tk()
+        label_error = tk.Label(root_error, text = "Range min can't be more than \nor equal to max")
+        label_error.place(anchor = "center", relx=0.5, rely=0.5)
+        root_error.mainloop()
+
+def screen4():
+    pass
+
+def directory_b():
+    pass
+
+def screen4_():
+    pass
+
+def directory_l():
     pass
 
 img1 = Image.open("Images/start.png")

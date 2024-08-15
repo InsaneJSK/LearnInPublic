@@ -16,3 +16,5 @@ The file entered for data must be in ".txt" format where:
 --> each line is written like a list
 --> the first element of the list corresponds to the header for that set of data
 --> all other elements except for first should be either integer type, float type or NoneType
+
+As an example for this ".txt" file, see "SAMPLE.txt" in the same directory.
