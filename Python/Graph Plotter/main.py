@@ -193,16 +193,107 @@ def submit_line():
         root_error.mainloop()
 
 def screen4():
-    pass
+    label4.place_forget()
+    label_title.grid_forget()
+    label_data.grid_forget()
+    titleentry.grid_forget()
+    b_submit.grid_forget()
+    b_data.grid_forget()
+    label_data_value.grid_forget()
 
 def directory_b():
-    pass
+    global label5, label6, label7, folder_path, b_browse, b_bargraph, filename
+    label5 = tk.Label(text = "Step 3 out of 3", font = "Helvetica 16", bg = "black", fg = "white", padx = 30)
+    label5.place(anchor = "center", relx =.5, rely = .04)
+    filename = ""
+    folder_path = tk.StringVar()
+    tk.Label(text = "").grid(row = 0)
+    tk.Label(text = "").grid(row = 1)
+    label6 = tk.Label(text = "Choose the directory where you wish to store it!", font = ("comicsansms, 12"))
+    label6.grid(row = 2)
+    label7 = tk.Label(master=root,textvariable=folder_path)
+    label7.grid(row = 3, column = 1)
+    b_browse = tk.Button(text="Browse", command=browse)
+    b_browse.grid(row = 3, column = 3)
+    b_bargraph = tk.Button(text = "Plot the graph", command = bargraph)
+    b_bargraph.place(anchor = "center", relx=.5, rely=.5)
 
 def screen4_():
-    pass
+    screen4()
+    label_x_min.grid_forget()
+    entry_x_min.grid_forget()
+    entry_x_max.grid_forget()
+    label_x_max.grid_forget()
 
 def directory_l():
-    pass
+    global label5, label6, label7, folder_path, b_browse, b_bargraph
+    label5 = tk.Label(text = "Step 3 out of 3", font = "Helvetica 16", bg = "black", fg = "white", padx = 30)
+    label5.place(anchor = "center", relx =.5, rely = .04)
+    folder_path = tk.StringVar()
+    tk.Label(text = "").grid(row = 0)
+    tk.Label(text = "").grid(row = 1)
+    label6 = tk.Label(text = "Choose the directory where you wish to store it!", font = ("comicsansms, 12"))
+    label6.grid(row = 2)
+    label7 = tk.Label(master=root,textvariable=folder_path)
+    label7.grid(row = 3, column = 1)
+    b_browse = tk.Button(text="Browse", command=browse)
+    b_browse.grid(row = 3, column = 3)
+    b_bargraph = tk.Button(text = "Plot the graph", command = linegraph)
+    b_bargraph.place(anchor = "center", relx=.5, rely=.5)
+
+def browse():
+    global folder_path, filename
+    filename = filedialog.askdirectory()
+    folder_path.set(filename)
+
+def bargraph():
+    dircheck()
+    bar_chart = pygal.Bar()
+    bar_chart.title = titlevalue.get()
+    maxcount = 0
+    for i in range(len(lis)):
+        bar_chart.add(lis[i][0], lis[i][1:])
+    bar_chart.render_to_file(f"{filename}/graph.svg")
+    webbrowser.open(f"{filename}/graph.svg")
+    label5.place_forget()
+    label6.grid_forget()
+    label7.grid_forget()
+    b_browse.grid_forget()
+    b_bargraph.place_forget()
+    label8 = tk.Label(text = "The graph has been plotted!", font = "Jokerman 25 bold", bg = "yellow", fg = "red", borderwidth = 6, relief = "ridge", padx = 20, pady = 10)
+    label8.place(anchor = "center", relx = 0.5, rely = 0.5)
+
+def linegraph():
+    dircheck()
+    line_chart = pygal.Line()
+    line_chart.title = titlevalue.get()
+    maxcount = 0
+    for a in lis:
+        if len(a) > maxcount:
+            maxcount=len(a)
+    for a in lis:
+        while len(a) != maxcount:
+            lis[a].insert(0, None)
+    line_chart.x_labels = map(str, range(x_min.get(), x_max.get()))
+    for a in range(len(lis)):
+        line_chart.add(lis[a][0], lis[a][1:])
+    line_chart.render_to_file(f"{filename}/graph.svg")
+    webbrowser.open(f"{filename}/graph.svg")
+    label5.place_forget()
+    label6.grid_forget()
+    label7.grid_forget()
+    b_browse.grid_forget()
+    b_bargraph.place_forget()
+    label8 = tk.Label(text = "The graph has been plotted!", font = "Jokerman 25 bold", bg = "yellow", fg = "red", borderwidth = 6, relief = "ridge", padx = 20, pady = 10)
+    label8.place(anchor = "center", relx = 0.5, rely = 0.5)
+
+def dircheck():
+    global filename
+    if filename == "":
+        root_error = tk.Tk()
+        label_error = tk.Label(root_error, text = "Filepath must not be empty")
+        label_error.pack(fill = "both")
+        root_error.mainloop()
 
 img1 = Image.open("Images/start.png")
 n_img1 = img1.resize((500, 200))
