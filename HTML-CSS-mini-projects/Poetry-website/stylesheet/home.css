@@ -1,0 +1,36 @@
+body {
+	text-align:center;
+	background-image: url('../images/poetry.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#special{
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: +60px
+}
+p{
+	font-size: +30px;
+	color:	maroon;
+}
+table, tr, td, th{
+	border-width: 100%;
+	border-style: double;
+	border: 5px solid red;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	font-size: +100px
+}
+td{
+	font-size: +100px;
+	text-align: center;
+}
+.table{
+	opacity: .8;
+	background-color: yellow;
+}
