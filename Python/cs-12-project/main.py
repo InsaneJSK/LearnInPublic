@@ -234,12 +234,79 @@ def update():
     input("-----Press enter to continue-----")
     menu()
 
-
 def find():
-    pass
+    print("How do you wish to find: ")
+    print("1 Find by code")
+    print("2 Find by name")
+    print("3 Find by author")
+    print("4 Back")
+    print("5 Exit")
+    loop2 = True
+    while loop2:
+        var2 = input("Enter the number: ")
+        if var2 == "1":
+            loop2 = False
+            findbycode()
+        elif var2 == "2":
+            loop2 = False
+            findbyname()
+        elif var2 == "3":
+            loop2 = False
+            findbyauthor()
+        elif var2 == "4":
+            loop2 = False
+            menu()
+        elif var2 == "5":
+            print("Exitting the application")
+            quit()
 
-def table():
-    pass
+def table(db, headers=["BCode", "BName", "AuthorName", "Borrower", "IssueDate", "ReturnDate"]):
+    print(tabulate(db, headers))
+
+def findbycode():
+    while True:
+        try:
+            bcode = input("Enter the code: ")
+            cursor.execute(f"select * from books where BCode = {bcode};")
+            db = cursor.fetchall()
+            if len(list(db)) == 0:
+                raise ValueError
+            table(db)
+            break
+        except:
+            print("Couldn't find any book")
+    input("-----press enter to continue-----")
+    menu()
+
+def findbyauthor():
+    while True:
+        try:
+            aname = input("Enter the name: ")
+            cursor.execute(f"select * from books where AuthorName = '{aname}';")
+            db = cursor.fetchall()
+            if len(list(db)) == 0:
+                raise ValueError
+            table(db)
+            break
+        except:
+            print("Couldn't find any book")
+    input("-----press enter to continue-----")
+    menu()
+
+def findbyname():
+    while True:
+        try:
+            bname = input("Enter the name: ")
+            cursor.execute(f"select * from books where BName = '{bname}';")
+            db = cursor.fetchall()
+            if len(list(db)) == 0:
+                raise ValueError
+            table(db)
+            break
+        except:
+            print("Couldn't find any book")
+    input("-----press enter to continue-----")
+    menu()
 
 #Main-loop
 print("Welcome to the Library Management Software, made by Jaspreet Singh class XII-Confident")
