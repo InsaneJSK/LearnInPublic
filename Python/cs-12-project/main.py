@@ -100,20 +100,150 @@ def showborrowed():
     input("-----Press enter to continue-----")
     menu()
 
+def shownotborrowed():
+    cursor.execute("select * from books where ReturnDate is not Null;")
+    db = cursor.fetchall()
+    db = list(db)
+    table(db)
+    input("-----Press enter to continue-----")
+    menu()
+
 def add():
-    pass
+    while True:
+        try:
+            Bcode = input("Enter the book code: ")
+            if len(Bcode) != 3 or int(Bcode) > 999:
+                raise ValueError
+            else:
+                break
+        except:
+            print("Book code must be a 3-digit integer")
+    while True:
+        try:
+            Bname = input("Enter the book name: ")
+            if len(Bname) > 50:
+                raise ValueError
+            else:
+                break
+        except:
+            print("Book name can't be longer than 50 chars")
+    while True:
+        try:
+            AuthorName = input("Enter the name of Author: ")
+            if len(AuthorName) > 30:
+                raise ValueError
+            else:
+                break
+        except:
+            print("Author name can't be more than 30 chars")
+    while True:
+        try:
+            Borrower = input("Enter the name of the borrower: ")
+            if len(Borrower) > 30:
+                raise ValueError
+            else:
+                break
+        except:
+            print("Borrower name can't be more than 30 chars")
+    while True:
+        try:
+            IssueDate = input("Enter the date of issuing in appropriate manner as YYYY-MM-DD: ")
+            if len(IssueDate) != 10 or IssueDate[4] != "-" or IssueDate[7] != "-":
+                raise ValueError
+            for i in IssueDate[0:4] + IssueDate[5:7]:
+                if i.isdigit() == False:
+                    raise ValueError
+            break
+        except:
+            print("IssueDate not written appropriately")
+    while True:
+        try:
+            ReturnDate = input("Enter the date of return in appropriate manner as YYYY-MM-DD: ")
+            if len(ReturnDate) != 10 or ReturnDate[4] != "-" or ReturnDate[7] != "-":
+                raise ValueError
+            for i in ReturnDate[0:4] + ReturnDate[5:7]:
+                if i.isdigit() == False:
+                    raise ValueError
+            break
+        except:
+            print("ReturnDate not written appropriately")
+    cursor.execute(f"Insert into books values({Bcode}, '{Bname}', '{AuthorName}', '{Borrower}', '{IssueDate}', '{ReturnDate}')")
+    print("Data entry added")
+    input("-----Press enter to continue-----")
+    menu()
 
 def delete():
-    pass
+    while True:
+        try:
+            bcode = input("Enter the code: ")
+            cursor.execute(f"delete from books where BCode = {bcode};")
+            print("Data entry deleted")
+            break
+        except:
+            print("Couldn't find any book")
+    input("-----press enter to continue-----")
+    menu()
 
 def update():
-    pass
+    while True:
+        try:
+            bcode = input("Enter the code: ")
+            cursor.execute(f"select * from books where BCode = {bcode};")
+            db = cursor.fetchall()
+            if len(list(db)) == 0:
+                raise ValueError
+            break
+        except:
+            print("Couldn't find any book")
+    while True:
+        try:
+            Borrower = input("Enter new name of the borrower: ")
+            if len(Borrower) > 30:
+                raise ValueError
+            else:
+                break
+        except:
+            print("Borrower name can't be more than 30 chars")
+    while True:
+        try:
+            IssueDate = input("Enter the date of issuing in appropriate manner as YYYY-MM-DD: ")
+            if len(IssueDate) != 10 or IssueDate[4] != "-" or IssueDate[7] != "-":
+                raise ValueError
+            for i in IssueDate[0:4] + IssueDate[5:7]:
+                if i.isdigit() == False:
+                    raise ValueError
+            break
+        except:
+            print("IssueDate not written appropriately")
+    while True:
+        try:
+            ReturnDate = input("Enter the date of return in appropriate manner as YYYY-MM-DD: ")
+            if ReturnDate.lower() == "null":
+                break
+            elif len(ReturnDate) != 10 or ReturnDate[4] != "-" or ReturnDate[7] != "-":
+                raise ValueError
+            else:
+                for i in ReturnDate[0:4] + ReturnDate[5:7]:
+                    if i.isdigit() == False:
+                        raise ValueError
+            break
+        except:
+            print("ReturnDate not written appropriately")
+    cursor.execute(f"Update books set Borrower = '{Borrower}', IssueDate = '{IssueDate}', ReturnDate = {ReturnDate} where BCode = {bcode};")
+    print("Data entry updated")
+    input("-----Press enter to continue-----")
+    menu()
+
 
 def find():
     pass
 
-def shownotborrowed():
-    pass
-
 def table():
     pass
+
+#Main-loop
+print("Welcome to the Library Management Software, made by Jaspreet Singh class XII-Confident")
+menu()
+
+#Disconnecting
+cursor.close()
