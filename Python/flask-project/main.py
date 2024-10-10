@@ -8,14 +8,18 @@ def home_page():
 
 @app.route('/market')
 def market():
-    return render_template("market.html")
+    items = [
+        {'id': 1, 'name': 'Phone', 'barcode': 123456789012, 'price': 500},
+        {'id': 2, 'name': 'Laptop', 'barcode': 345678901234, 'price': 900},
+        {'id': 3, 'name': 'Keyboard', 'barcode': 567890123456, 'price': 150}
+    ]
+    return render_template("market.html", items= items)
 
 """
-@app.route('/about')
-def about_page():
-    return "<h1>About page!</h1>"
-
-@app.route('/about/<username>')
-def about_user(username):
-    return f"<h1>This is the about page of {username}"
+Jinja Stuff to remember for future me:
+when you need to access the value of a variable stored and passed in python, in html, use this: {{ var }}
+for logic codes use {% logic %}
+eg for loop 
+{% for i in list_name %}
+{% endfor %}
 """
