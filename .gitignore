@@ -1,1 +1,3 @@
 Python/flask-project/.vscode
+*.zip
+Python/cool-python-stuff/ml-100k/*
