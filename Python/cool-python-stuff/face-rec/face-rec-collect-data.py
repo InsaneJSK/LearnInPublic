@@ -5,7 +5,7 @@ cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 skip = 0
 face_data = []
-dataset_path = './data/'
+dataset_path = '../data/'
 file_name = input("Enter the name of the person: ")
 
 while True:
