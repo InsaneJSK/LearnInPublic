@@ -1,10 +1,9 @@
-Python/flask-project/.vscode
+.vscode/
 *.zip
 Python/cool-python-stuff/movie-recommender/ml-100k/*
 Python/cool-python-stuff/data/*
-Python/cool-python-stuff/nltk/__pycache__/*
 Python/cool-python-stuff/svm/img-classification/images/
-Python/cool-python-stuff/NN/__pycache__/*
 *.png
 *.jpg
 Python/mini-projects/expense-tracker/
+__pycache__/
