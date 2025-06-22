@@ -125,3 +125,53 @@ X[0].toarray()
 from sklearn.feature_extraction.text import TfidfVectorizer
 cv = TfidfVectorizer()
 X = cv.fit_transform(corpus)
+
+# %%
+X[0].toarray()
+
+# %% [markdown]
+# TF = number of times the term appears in a document/total number of words in the document
+#
+# IDF = log(number of documents/number of documents the term appears)
+
+# %% [markdown]
+# #### Word Embedding
+# - Uses cosine similarity
+# - distance = 1 - cosine similarity
+
+# %% [markdown]
+# ### Word2Vec
+# #### CBOW
+# - Continuous Bag of Words
+# - Window size (ofc should be odd, center word is o/p), same as no. of neurons in hidden layer, output uses softmax (no. of neurons = len(list(set(corpus)))), and input should have len(list(set(corpus)))**2
+# #### Skipgram
+# - i/o are reversed from CBOW
+# - just reverse the ANN from CBOW
+
+# %%
+# !pip install gensim
+
+# %%
+from gensim.models import word2vec, KeyedVectors
+
+# %%
+import gensim.downloader as api
+wv = api.load('word2vec-google-news-300')
+vec_king = wv['king']
+
+# %%
+vec_king
+
+# %%
+wv.most_similar('happy')
+
+# %%
+wv.similarity('Happy', 'Sad')
+
+# %%
+vec = wv['king']-wv['man']+wv['women']
+
+# %%
+wv.most_similar([vec])
+
+# %%
