@@ -7,3 +7,6 @@ Python/cool-python-stuff/svm/img-classification/images/
 *.jpg
 Python/mini-projects/expense-tracker/
 __pycache__/
+*.env
+venv/
+Python/cool-python-stuff/nltk-nlp/NLP-Live-main/*
