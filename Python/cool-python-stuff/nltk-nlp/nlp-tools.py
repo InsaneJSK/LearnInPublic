@@ -175,3 +175,80 @@ vec = wv['king']-wv['man']+wv['women']
 wv.most_similar([vec])
 
 # %%
+## Q-Q plots
+import scipy.stats as stats
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.random.randn(5000)
+stats.probplot(data, dist="norm", plot=plt)
+plt.show()
+
+
+# %% [markdown]
+# ### Word Embedding Layers
+# - OHE
+# - padding
+# - 
+
+# %%
+import tensorflow as tf
+print(tf.__version__)
+
+# %%
+### sentences
+sent=[  'the glass of milk',
+     'the glass of juice',
+     'the cup of tea',
+    'I am a good boy',
+     'I am a good developer',
+     'understand the meaning of words',
+     'your videos are good']
+
+# %%
+sent
+
+# %%
+##tensorflow >2.0
+from tensorflow.keras.preprocessing.text import one_hot
+
+# %%
+### Vocabulary size
+voc_size=500
+onehot_repr=[one_hot(words,voc_size)for words in sent] 
+print(onehot_repr)
+
+# %%
+from tensorflow.keras.layers import Embedding
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential
+
+# %%
+## pre padding
+sent_length=8
+embedded_docs=pad_sequences(onehot_repr,padding='pre',maxlen=sent_length)
+print(embedded_docs)
+
+# %%
+## 10 feature dimesnions
+dim=10
+model=Sequential()
+model.add(Embedding(voc_size,10))
+model.build(input_shape=(None, sent_length))
+model.compile('adam','mse')
+model.summary()
+
+
+# %%
+##'the glass of milk',
+embedded_docs[0]
+
+# %%
+model.predict(embedded_docs[0])
+
+# %%
+print(model.predict(embedded_docs))
+
+# %% [markdown]
+# ### LSTM Implementation
+# - go read fakenewsclassifier.ipynb
