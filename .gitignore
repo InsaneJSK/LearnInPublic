@@ -1,12 +1,21 @@
+#Cache folders
 .vscode/
+__pycache__/
+
+#Extensions
 *.zip
+*.png
+*.jpg
+*.cp311-win_amd64.*
+*.obj
+
+#Environments
+.env
+venv/
+
+#Datasets
 Python/cool-python-stuff/movie-recommender/ml-100k/*
 Python/cool-python-stuff/data/*
 Python/cool-python-stuff/svm/img-classification/images/
-*.png
-*.jpg
 Python/mini-projects/expense-tracker/
-__pycache__/
-*.env
-venv/
 Python/cool-python-stuff/nltk-nlp/NLP-Live-main/*
