@@ -1,2 +1,8 @@
-This is a repository where I'll be doing code to learn!
-All mini-projects, learn-and-code, trying out new things, etc. is added here
+# LearningRepo
+
+- This repository is for me to try out various different codes, try out things and learn!
+- The jupyter notebook in this repository have been converted to a corresponding python file using jupytext
+
+```bash
+jupytext --set-formats ipynb,py your_notebook.ipynb
+```
