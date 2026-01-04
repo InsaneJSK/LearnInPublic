@@ -1,5 +1,6 @@
 # !pip install -U langchain langchain-core langchain-community --q
 # !wget https://huggingface.co/microsoft/Phi-3-mini-4k-instruct-gguf/resolve/main/Phi-3-mini-4k-instruct-fp16.gguf
+# !pip install llama-cpp-python --q
 
 from langchain_community.llms import LlamaCpp
 
@@ -90,4 +91,14 @@ def run_story_pipeline(llm, summary):
     }
 
 run_story_pipeline(llm, "a girl that lost her mother")
+
+template = """<s><|user|>Current conversation:{chat_history}
+
+{input_prompt}<|end|>
+<|assistant|>"""
+
+prompt = PromptTemplate(
+    template=template,
+    input_variables=["input_prompt", "chat_history"]
+)
 
