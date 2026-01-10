@@ -1,0 +1,212 @@
+Sl. No.,Name of the Road,Specific location,Date,Frequency,latitude,longitude
+1.0,Africa Avenue Road,Both carriageway Madhav Rao Schindia Marg,['01.09.2021'],1,28.5592935,77.1875469
+2.0,Akbar Road,"C-Hexagon, Akbar Road",['28.07.2021'],1,28.6026044,77.2082953
+3.0,Anuvrat Marg,Lado Sarai towards City Hospital,['13.07.2021'],1,28.5162104,77.1882116
+4.0,Anuvrat Marg,Near 100 Foota Road,['01.09.2021'],1,28.6277304,77.342308
+5.0,Ashok Vihar Road,Near Bartan Market towards Ashok Vihar,['11.09.2021'],1,28.6915549,77.1771146
+6.0,Ashoka Road,Buta Singh Roundabout,['31.08.2021'],1,28.6225114,77.2142253
+7.0,Ashoka Road,Gurudwara Bangla Sahib Bus Stand,['08.08.2021'],1,28.6225114,77.2142253
+8.0,Ashoka Road,Near C-Hexagon,['11.09.2021'],1,28.6225114,77.2142253
+9.0,Astha Kunj Road,Near EROS Mall,['11.09.2021'],1,28.6120711,77.0325062
+10.0,Aurobindo Marg,AIIMS towards Barapulla Flyover,['29.07.2021'],1,28.575792,77.2097835
+11.0,Aurobindo Marg,IIT towards Mother International School,"['13.07.2021', '31.08.2021']",2,28.575792,77.2097835
+12.0,Aurobindo Marg,INA Towards AIIMS Underpass,"['29.07.2021', '21.08.2021', '11.09.2021']",3,28.575792,77.2097835
+13.0,Aurobindo Marg,Near Adhchini towards MMTC,['31.08.2021'],1,28.575792,77.2097835
+14.0,Aurobindo Marg,Near Adhchini Village,['11.09.2021'],1,28.575792,77.2097835
+15.0,Aurobindo Marg,Near IIT / Adhchini Redlight,"['13.07.2021', '19.07.2021', '21.08.2021', '11.09.2021']",4,28.575792,77.2097835
+16.0,Aurobindo Marg,Near Malviya Nagar Metro Station,['11.09.2021'],1,28.575792,77.2097835
+17.0,Aurobindo Marg,PTS Malviya Nagar Redlight,['08.08.2021'],1,28.575792,77.2097835
+18.0,Aurobindo Marg,PTS towards Adhchini,['13.07.2021'],1,28.575792,77.2097835
+19.0,Banda Bahadur Marg,Near Batra Cinema,['14.07.2021'],1,28.7048735,77.2114593
+20.0,Bawana Road,Near Bawana Village,['11.09.2021'],1,28.7645456,77.0549596
+21.0,Bhairon Marg,Near Bhairon Mandir,['11.09.2021'],1,28.6126948,77.2494221
+22.0,Boulevard Road,Infront of Tis Hazari Court,['11.09.2021'],1,28.6665963,77.217998
+23.0,Boulevard Road,Infront of Tis Hazari Metro Station,"['01.08.2021', '01.09.2021']",2,28.6665963,77.217998
+24.0,BSZ Marg,ITO Chowk,['21.08.2021'],1,28.6281634,77.246897
+25.0,Choudhary Fateh Singh Marg,Near P.S. Timarpur (both carriageway) / Wazirabad Road to Mall Road,"['29.07.2021', '01.08.2021']",2,28.7012628,77.2186795
+26.0,Dabri Flyover,On the loop of the flyover coming from Dabri side,['13.07.2021'],1,28.6132255,77.0875704
+27.0,DDU Marg (Deen Dayal Upadhyay Marg),W-Point,['31.08.2021'],1,28.6327506,77.2328993
+28.0,Dr. Bhim Rao Ambedkar Road,"Bhim Gali, Malkaganj","['01.08.2021', '01.09.2021']",2,28.6653985,77.2951036
+29.0,Drain Road (Dabri-Dwarka),Drain Road at various locations between Power House and Dabri roundabout,['13.07.2021'],1,28.61251665,77.0558246
+30.0,Dwarka Link Road,Dwarka Underpass,"['13.07.2021', '19.07.2021', '11.09.2021']",3,28.5747046,77.119109
+31.0,Dwarka Road,Hanuman Mandir near Palam flyover  / Towards Palam flyover from IOC Sadar Bazar,"['13.07.2021', '19.07.2021', '31.08.2021', '01.09.2021', '11.09.2021']",5,28.5747046,77.119109
+32.0,Dwarka Road,Kirbi Place,['19.07.2021'],1,28.5747046,77.119109
+33.0,Dwarka Road,Road No. 224 & 210 Near Jal Board Booster pump,['01.09.2021'],1,28.5747046,77.119109
+34.0,Dwarka Road,"Sector-1, Dwarka Slip Road",['11.09.2021'],1,28.5747046,77.119109
+35.0,Girdhari Lal Goswami Marg,--,['21.08.2021'],1,28.6387617,77.1431242
+36.0,Girdhari Lal Goswami Marg,Near Post Office Naraina,['11.09.2021'],1,28.6387617,77.1431242
+37.0,GT Road / Old GT Road,Between Dharampura and Iron Bridge / near Iron Bridge,"['03.07.2021', '14.07.2021', '19.07.2021', '29.07.2021', '01.08.2021']",5,28.6538979,77.2318096
+38.0,GT Road / Old GT Road,Dharampura Seelampur,"['19.07.2021', '28.07.2021']",2,28.6698165,77.2668137
+39.0,GT Road / Old GT Road,Near Seelampur Flyover  (Shastri Park to Shahdara carriageway) / On the foot of Seelampur Flyover (ISBT to Apsara Border carriageway),"['03.07.2021', '19.07.2021', '28.07.2021', '30.07.2021', '01.08.2021']",5,28.671372166666668,77.27195053333332
+40.0,GT Road / Old GT Road,Near Welcome Metro Station towards Shyam Lal College both carriageway / near Shyam Lal College,['01.08.2021'],1,28.6718164,77.2776882
+41.0,GT Road / Old GT Road,Shahdara Mandi,['01.08.2021'],1,28.6758661,77.2985078
+42.0,GT Road / Old GT Road,Shastri Park to Shahdara carriageway,['14.07.2021'],1,28.672150000000002,77.27451895
+43.0,GTK Road,Azad Pur underpass,"['13.07.2021', '14.07.2021', '01.08.2021', '11.09.2021']",4,28.7057821,77.1819488
+44.0,GTK Road,Jahangirpuri both carriageway,['14.07.2021'],1,28.6964486,77.1842968
+45.0,GTK Road,Libaspur Underpass,['11.09.2021'],1,28.7534267,77.142996
+46.0,GTK Road,Near GTK DTC Depot,"['03.09.2021', '11.09.2021']",2,28.6327301,77.2073057
+47.0,GTK Road,Near Jahangir Puri Metro Station,['11.09.2021'],1,28.7301654,77.1679057
+48.0,GTK Road,Shakti Nagar underpass,['01.08.2021'],1,28.6793047,77.19448
+49.0,Hardev Sahai Road,Near Kashmere Gate Metro Station,"['01.08.2021', '11.09.2021']",2,28.6672051,77.2163975
+50.0,Inder Chandra Shastri Marg,Shakti Nagar Chowk,['14.07.2021'],1,28.6815955,77.198412
+51.0,Kanjhawala – Bawana Road,Near Kanjhawala Chowk,['13.09.2021'],1,28.7972131,77.0304395
+52.0,Kanjhawala Road,Cygnus Hospital to Karala Chowk,['19.07.2021'],1,28.6977366,77.0979839
+53.0,Kautilaya Marg,R/A Samrat Hotel Chanakya Puri,"['19.05.2021', '01.09.2021']",2,28.5967897,77.1981763
+54.0,Kemal Attaturk Marg,Near Bhinder Point,['11.09.2021'],1,28.5973513,77.2110967
+55.0,Khadak Singh Marg,Near GPO,['31.08.2021'],1,28.6269424,77.206645
+56.0,Khera Road,Near Khera Village Redlight,['11.09.2021'],1,28.7660219,77.1237303
+57.0,Krishna Manan Marg,A-Block,['31.08.2021'],1,28.5522406,77.1625995
+58.0,Lala Lajpat Rai Marg,Near Central School Greater Kailash,['29.07.2021'],1,28.5529995,77.2453159
+59.0,Lala Lajpat Rai Marg,Near Lodhi Flyover both side,['13.07.2021'],1,28.5529995,77.2453159
+60.0,Lala Lajpat Rai Marg,Near Moolchand Bus Stand,['11.09.2021'],1,28.5529995,77.2453159
+61.0,Lala Lajpat Rai Marg,Near Moolchand Hospital,['31.08.2021'],1,28.5529995,77.2453159
+62.0,Lampur – Narela Road,Lampur Underpass,['11.09.2021'],1,28.8511615,77.0644496
+63.0,Lodhi Road,Near Bhishm Pitamah crossing,['31.08.2021'],1,28.589425,77.2129011
+64.0,M.B. Road (Mehrauli – Badarpur Road),Asian Market Khanpur M.B. Road,"['19.07.2021', '13.09.2021']",2,28.5054709,77.2764802
+65.0,M.B. Road (Mehrauli – Badarpur Road),Khanpur T-Point to Hamdard T-Point both carriageway / Near RPS Colony Khanpur towards Badarpur Carriageway / Vayusenabad and Tigri on Khanpur to Badarpur carriageway,"['29.07.2021', '30.07.2021', '08.08.2021']",3,28.5054709,77.2764802
+66.0,M.B. Road (Mehrauli – Badarpur Road),Near Batra Hospital,['13.09.2021'],1,28.5054709,77.2764802
+67.0,M.B. Road (Mehrauli – Badarpur Road),Near Saket Metro Station,['31.08.2021'],1,28.5054709,77.2764802
+68.0,M.B. Road (Mehrauli – Badarpur Road),Near Sangam Vihar Redlight both carriageway,['11.09.2021'],1,28.5726765,77.1733639
+69.0,M.B. Road (Mehrauli – Badarpur Road),Pul Prahladpur Underpass,"['13.07.2021', '19.07.2021', '30.07.2021', '08.08.2021', '21.08.2021', '31.08.2021', '11.09.2021']",7,28.5054709,77.2764802
+70.0,M.B. Road (Mehrauli – Badarpur Road),Sainik Farm Gali No. 2 Cariappa Marg,['13.07.2021'],1,28.5054709,77.2764802
+71.0,M.G. Road (Mehrauli – Gurugram Road),Andheria Mor to M.G. Road,['13.07.2021'],1,28.5085988,77.1771193
+72.0,M.G. Road (Mehrauli – Gurugram Road),Near Jain Mandir Qutub Minar,['01.09.2021'],1,28.524413,77.1854501
+73.0,Mahipalpur Road,Mahipalpur Underpass,['11.09.2021'],1,28.5460788,77.1293232
+74.0,Man Singh Road,Towards Akhar Road,['31.08.2021'],1,28.6068133,77.2243737
+75.0,Mathura Road,"Bhagwan Dass T-Point, Mathura Road",['28.07.2021'],1,28.5974055,77.2405552
+76.0,Mathura Road,Mohan Estate,"['27.07.2021', '21.08.2021']",2,28.5974055,77.2405552
+77.0,Mathura Road,Near Matka Peer & Bhagwan Dass Road,['01.09.2021'],1,28.5974055,77.2405552
+78.0,Mathura Road,Near ZOO,['01.09.2021'],1,28.5974055,77.2405552
+79.0,Mathura Road,Sarita Vihar Underpass,"['21.08.2021', '11.09.2021']",2,28.5974055,77.2405552
+80.0,Maulana Azad Road,Infront of Vigyan Bhawan,['31.08.2021'],1,28.6101186,77.2213509
+81.0,Minto Bridge Road,--,['21.08.2021'],1,28.6334521,77.2266682
+82.0,MM Road,Spinal Injury,['21.08.2021'],1,28.8370807,77.5786753
+83.0,Mother Teresa Crescent Marg,"Infront of Gate No. 31, R.P. Bhawan",['02.09.2021'],1,28.6069886,77.1949036
+84.0,Mother Teresa Crescent Road,Near 11 Murti,['01.09.2021'],1,28.602922,77.2019172
+85.0,Mother Teresa Crescent Road,Near RML Hospital roundabout,['11.09.2021'],1,28.6069886,77.1949036
+86.0,Mother Teresa Crescent Road,Near RML U-Turn,['01.09.2021'],1,28.6069886,77.1949036
+87.0,Mother Teresa Crescent Road,Near roundabout Teen Murti,['01.09.2021'],1,28.6056148,77.1990695
+88.0,Mother Teresa Crescent Road,Redlight Sardar Patel Marg towards Ram Manohar Lohia Hospital,['13.07.2021'],1,28.6080564,77.1891874
+89.0,Moti Lal Nehru Marg,Q-Point Moti Lal Nehru Marg,['31.08.2021'],1,28.5774076,77.1608548
+90.0,Mubarakpur Road,Nangloi Railway Phatak to Mubarakpur village,['19.07.2021'],1,28.5759348,77.2251127
+91.0,Najafgarh – Bahadurgarh Road,From Firni Road Najafgarh upto PTS Jharoda Kalan,['19.07.2021'],1,28.643348,76.9579686
+92.0,Najafgarh – Bijwasan Road,Near CISF Camp,['11.09.2021'],1,28.5341801,77.0488829
+93.0,Najafgarh – Bijwasan Road,Near Golak Dham Bijwasan,['01.09.2021'],1,28.5341801,77.0488829
+94.0,Najafgarh – Bijwasan Road,Near Indian Oil Corporation,['11.09.2021'],1,28.5775846,77.1087713
+95.0,Najafgarh – Bijwasan Road,Under Bijwasan Flyover,['13.07.2021'],1,28.5341801,77.0488829
+96.0,Najafgarh Firni Road,Firni Road,['19.07.2021'],1,28.6124504,76.9865067
+97.0,Najafgarh Road,Near Moti Nagar Chowk,['11.09.2021'],1,28.6129456,77.3008496
+98.0,Najafgarh Road,Near Vishal Chowk,['01.09.2021'],1,28.6129456,77.3008496
+99.0,Najafgarh Road,Ramesh Nagar towards Raja Garden both carriageway,['01.09.2021'],1,28.6129456,77.3008496
+100.0,Najafgarh Road,Zakhira underpass,"['14.07.2021', '01.08.2021', '31.08.2021', '01.09.2021', '11.09.2021']",5,28.6129456,77.3008496
+101.0,Nangloi – Najafgarh Road,Baprola Village bus stand,['01.08.2021'],1,28.6554154,77.047835
+102.0,Nangloi – Najafgarh Road,Near Water Tank,"['19.07.2021', '01.08.2021', '21.08.2021', '31.08.2021', '11.09.2021']",5,28.5380687,77.1631194
+103.0,NH-1,Near Singhu Village,['28.07.2021'],1,28.6138954,77.2090057
+104.0,NH-24,Ghazipur,['21.08.2021'],1,28.6138954,77.2090057
+105.0,NH-8,GGR – PDR,"['13.07.2021', '19.07.2021', '11.09.2021']",3,28.6138954,77.2090057
+106.0,NH-9 (NH-24),Near Mother Diary underpass,['01.08.2021'],1,28.7050962,77.2498979
+107.0,Nithari Road,Kirari Village to Naveen public school,['19.07.2021'],1,28.6981652,77.0608013
+108.0,Nitya Nand Marg,Near Gate No. 3 Kashmere Gate metro station,['14.07.2021'],1,28.6674493,77.2282488
+109.0,Old Rohtak Road,Anand Parbat Gali No. 10,['31.08.2021'],1,28.669713,77.1673574
+110.0,Outer Ring Road,Adhchini towards Kishangarh,['01.09.2021'],1,28.5509395,77.1833192
+111.0,Outer Ring Road,Madhuban Chowk,['30.07.2021'],1,28.5509395,77.1833192
+112.0,Outer Ring Road,Near Munirka Village towards RTR,['11.09.2021'],1,28.5509395,77.1833192
+113.0,Outer Ring Road,Near Redlight B-block Mangolpuri,['14.07.2021'],1,28.5509395,77.1833192
+114.0,Outer Ring Road,Near Savitri Flyover both side,"['31.08.2021', '01.09.2021']",1,28.5509395,77.1833192
+115.0,Outer Ring Road,Under RTR Flyover and near Munirka Redlight,"['13.07.2021', '01.08.2021', '21.08.2021']",3,28.5509395,77.1833192
+116.0,Pankha Road,"Descending point of the loop of Dabri flyover coming from Uttam Nagar side, near Janak Cinema",['13.07.2021'],1,28.6039981,77.1125781
+117.0,Patel Road,Near Shadipur Flyover,['01.09.2021'],1,28.637461,77.1814651
+118.0,Patel Road,Patel Nagar Road both carriageway,['01.09.2021'],1,28.637461,77.1814651
+119.0,Pusa Road,Roundabout Bagga Link near Hanuman Murti Karol Bagh,['19.05.2021'],1,28.6299946,77.1671391
+120.0,Rafi Marg,Entire Rafi Marg,['27.07.2021'],1,28.6219572,77.2132402
+121.0,Rafi Marg,Near Rail Bhawan Bus Stand & Boat Club,['01.09.2021'],1,28.6219572,77.2132402
+122.0,Rafi Marg,Sunheri Bagh towards Rail Bhawan,['31.08.2021'],1,28.6219572,77.2132402
+123.0,Raisina Road,Both carriageway,['02.09.2021'],1,28.6172985,77.2129521
+124.0,Raisina Road,Opposite Youth Congress Office,['02.09.2021'],1,28.6172985,77.2129521
+125.0,Raisina Road,Roundabout Rail Bhawan,['19.07.2021'],1,28.6172985,77.2129521
+126.0,Rajpath Road,Near India Gate,['11.09.2021'],1,28.6129332,77.2294928
+127.0,Ram Nath Vij Marg,Near Tower,['11.09.2021'],1,28.6281165,77.1760868
+128.0,Rani Jhansi Road,Near Burfkhana Chowk,"['01.09.2021', '11.09.2021']",2,28.6569503,77.2038352
+129.0,Ring Road,CNG pump R.K. Puram,['27.07.2021'],1,28.6368454,77.1302053
+130.0,Ring Road,IP flyover towards  Sarai Kale Khan / near Petrol Pump on the carriageway towards Ashram,"['09.07.2021', '19.07.2021']",2,28.6368454,77.1302053
+131.0,Ring Road,Mayapuri Flyover,['08.08.2021'],1,28.6368454,77.1302053
+132.0,Ring Road,Mayapuri Metro Station,"['21.08.2021', '11.09.2021']",2,28.6368454,77.1302053
+133.0,Ring Road,Moolchand Underpass,"['31.08.2021', '11.09.2021']",2,28.6368454,77.1302053
+134.0,Ring Road,Near AIIMS,['31.08.2021'],1,28.6368454,77.1302053
+135.0,Ring Road,Near Hanuman Mandir / Setu,"['14.07.2021', '01.08.2021', '21.08.2021', '02.09.2021', '11.09.2021']",5,28.6368454,77.1302053
+136.0,Ring Road,Near Hyatt Hotel,"['13.07.2021', '21.08.2021']",2,28.5701755,77.1857192
+137.0,Ring Road,near Kela Ghat,['14.07.2021'],1,28.6368454,77.1302053
+138.0,Ring Road,Near Lajpat Nagar Flyover,['01.09.2021'],1,28.6368454,77.1302053
+139.0,Ring Road,Near Mayapuri Chowk,['01.09.2021'],1,28.6368454,77.1302053
+140.0,Ring Road,Near Nizamuddin Khatta,['31.08.2021'],1,28.6368454,77.1302053
+141.0,Ring Road,Near P.S. Civil Lines,['30.07.2021'],1,28.6368454,77.1302053
+142.0,Ring Road,Near Rajdhani College to ESI Hospital,['01.09.2021'],1,28.6368454,77.1302053
+143.0,Ring Road,Near Redlight towards Bhairon Mandir,['11.09.2021'],1,28.6086166,77.1403328
+144.0,Ring Road,Near WHO Building,"['21.08.2021', '11.09.2021']",2,28.6086166,77.1403328
+145.0,Ring Road,"Sector-13, R.K. Puram near Satya Niketan",['13.07.2021'],1,28.6086166,77.1403328
+146.0,Ring Road,Towards Khybar Pass road,"['30.07.2021', '01.08.2021']",2,28.6086166,77.1403328
+147.0,Ring Road,Towards Timarpur,['14.07.2021'],1,28.6086166,77.1403328
+148.0,Ring Road,Under Britannia Flyover,['11.09.2021'],1,28.6086166,77.1403328
+149.0,Ring Road,Under Dhaula Kuan flyover towards Naraina,['19.05.2021'],1,28.6086166,77.1403328
+150.0,Ring Road,Under Kodia Pul,['02.09.2021'],1,28.6086166,77.1403328
+151.0,"Road No. 201, Dwarka",Near Rajapuri Bus stand,['13.07.2021'],1,28.571524,77.0753579
+152.0,"Road No. 226, Dwarka",Sector-20 near Marble Market,['11.09.2021'],1,28.565182,77.0597236
+153.0,Road No. 57,Bihari Colony Railway underpass,"['01.08.2021', '11.09.2021']",2,28.6711259,77.2827076
+154.0,Rohtak Road,Anand Parbat Redlight,"['08.08.2021', '03.09.2021']",2,28.6624722,77.1853223
+155.0,Rohtak Road,"Metro Pillar No. 505, Mundka",['27.07.2021'],1,28.6624722,77.1853223
+156.0,Rohtak Road,Nangloi towards Mundka carriageway,['01.08.2021'],1,28.6624722,77.1853223
+157.0,Rohtak Road,Near Mundka Metro Station,"['29.07.2021', '21.08.2021']",2,28.6624722,77.1853223
+158.0,Rohtak Road,Near Mundka Village,['11.09.2021'],1,28.6624722,77.1853223
+159.0,Rohtak Road,Near Nangloi Metro Station,['01.09.2021'],1,28.6624722,77.1853223
+160.0,Rohtak Road,Near Peeragarhi Chowk,['13.07.2021'],1,28.6624722,77.1853223
+161.0,Rohtak Road,Near pillar no 450 Mundka,['14.07.2021'],1,28.6624722,77.1853223
+162.0,Rohtak Road,Near Rajdhani Park Metro Station both carriageways,"['19.05.2021', '13.07.2021', '19.07.2021', '28.07.2021', '08.08.2021', '31.08.2021', '11.09.2021']",7,28.6624722,77.1853223
+163.0,Rohtak Road,Tikri Border,"['19.07.2021', '01.08.2021']",2,28.6624722,77.1853223
+164.0,Rohtak Road,Zakhira Railway Track,['31.08.2021'],1,28.6624722,77.1853223
+165.0,Rohtak Road,Zakhira towards Anand Parbat,['28.07.2021'],1,28.6624722,77.1853223
+166.0,Sansad Marg,Near roundabout Patel Chowk,['01.09.2021'],1,28.6226287,77.2120909
+167.0,Sardar Patel Marg,Dhaula Kuan Flyover both carriageway,['11.09.2021'],1,28.6080564,77.1891874
+168.0,Sardar Patel Marg,Near 11 Murti towards RML Hospital,['31.08.2021'],1,28.6080564,77.1891874
+169.0,Satguru Ram Singh Marg,Lajwanti Chowk,['01.09.2021'],1,28.6188228,77.1131431
+170.0,Shahjahan Road,--,['31.08.2021'],1,28.6071138,77.2268949
+171.0,Shankar Road,Near Roundabout Pusa,['31.08.2021'],1,28.6246723,77.1989555
+172.0,Sher Shah Road,Near Mathura Road Redlight,['27.07.2021'],1,28.609335,77.2396558
+173.0,Shyama Prasad Mukherjee Marg,Exit gate of Old Delhi Railway Station,['02.09.2021'],1,28.660932,77.2276494
+174.0,Shyama Prasad Mukherjee Marg,Near Chhata Rail,"['14.07.2021', '21.08.2021', '31.08.2021']",3,28.7042808,77.1920304
+175.0,South Avenue Road,Both side South Avenue Road,['01.09.2021'],1,28.6079813,77.1990576
+176.0,SSN Marg,Near DLF,"['02.09.2021', '11.09.2021']",2,28.5435507,77.1567713
+177.0,SSN Marg,Near Nanda Hospital,['02.09.2021'],1,28.4638104,77.1862889
+178.0,SSN Marg,Near Qutub Minar Metro Station,"['08.08.2021', '21.08.2021', '01.09.2021', '02.09.2021', '11.09.2021', '13.09.2021']",6,28.4638104,77.1862889
+179.0,Sunheri Bagh Road,Sunheri Maszid,['27.07.2021'],1,28.6074306,77.2121723
+180.0,Tamil Sangam Marg,Nera Amar Shahid Genu T-Point,['13.07.2021'],1,28.5674885,77.1752648
+181.0,Thimayya Marg,Near Redlight Thimayya Marg towards Airport,['11.09.2021'],1,28.5994886,77.1333247
+182.0,Tilak Marg,A-Point,['02.09.2021'],1,28.6223066,77.2394313
+183.0,Tilak Marg,C-Hexagon Tilak Marg,['29.07.2021'],1,28.6223066,77.2394313
+184.0,Tilak Marg,Under Tilak Bridge,['11.09.2021'],1,28.6223066,77.2394313
+185.0,Tilak Marg,W-Point,['13.07.2021'],1,28.6223066,77.2394313
+186.0,Tyag Raj Marg,--,['31.08.2021'],1,28.6138954,77.2090057
+187.0,Vandemataram Marg,Near roundabout Bagga Link,['08.08.2021'],1,28.7225268,77.1020297
+188.0,Vandemataram Marg,Roundabout Shankar Road,['08.08.2021'],1,18.6552904,73.769824
+189.0,Veer Banda Bairagi Marg,Azad Market underpass,"['14.07.2021', '08.08.2021', '21.08.2021', '01.09.2021', '11.09.2021']",5,28.6083913,77.0447941
+190.0,Vikas Marg,Infront of WHO Building,"['29.07.2021', '01.08.2021']",2,28.6311014,77.2785104
+191.0,Wazirabad Road,Bhajanpura main market towards Wazirabad,['28.07.2021'],1,28.7110765,77.227034
+192.0,Wazirabad Road,Main Market Khajuri,['21.08.2021'],1,28.7110765,77.227034
+193.0,Wazirabad Road,Near Bhajanpura Bus Stand,['29.07.2021'],1,28.7110765,77.227034
+194.0,Wazirabad Road,near Bhajanpura Mazar,"['14.07.2021 19.07.2021', '28.07.2021']",3,28.7110765,77.227034
+195.0,Wazirabad Road,Near Khajuri towards Brijpuri,['11.09.2021'],1,28.7110765,77.227034
+196.0,Wazirabad Road,Yamuna Vihar towards Khajuri Khas both  carriageway,['01.08.2021'],1,28.7110765,77.227034
+197.0,DAVP Marg,CISF Cut,['21.08.2021'],1,28.6277225,77.2220165
+198.0,Lala Lajpat Rai Marg,Jangpura Metro Station,['21.08.2021'],1,28.5529995,77.2453159
+199.0,Lala Lajpat Rai Marg,Lajpat Nagar Metro Station,['21.08.2021'],1,28.5529995,77.2453159
+200.0,Palam Road,Mehram Nagar Underpass,['21.08.2021'],1,28.577725,77.1037865
+201.0,--,Rajokari Underpass,['21.08.2021'],1,28.6138954,77.2090057
+202.0,NH-48 Gurugram Road,Sanjay T-Point,['21.08.2021'],1,28.5407727,77.1172232
+203.0,--,Babar Chowk,['21.08.2021'],1,28.6292586,77.2326727
+204.0,--,Bakkarwala,['21.08.2021'],1,28.6138954,77.2090057
+205.0,J.B. Tito Marg,Central School Andrewz Ganj,['21.08.2021'],1,28.5604456,77.2295936
+206.0,GT Road,Chintamani Flyover,['21.08.2021'],1,28.6851175,77.1960033
+207.0,"Jhilmil Industrial Area, Railway Road",Kasturba Nagar Underpass,['21.08.2021'],1,28.5774817,77.2256295
+208.0,--,Monkey Bridge Saleemgarh,['21.08.2021'],1,28.6138954,77.2090057
+209.0,--,Okhla Mandi,['21.08.2021'],1,28.6138954,77.2090057
+210.0,--,Rithala Metro Station,['21.08.2021'],1,28.6138954,77.2090057
+211.0,SSN Marg,Y-Point Chattarpur,['21.08.2021'],1,28.4638104,77.1862889
