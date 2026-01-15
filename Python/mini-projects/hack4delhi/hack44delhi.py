@@ -276,7 +276,7 @@ df[df.isnull().any(axis=1)]
 df.describe().to_markdown()
 
 # %%
-# !pip install pandas geopandas shapely h3 folium matplotlib
+# %pip install pandas geopandas shapely h3 folium matplotlib
 
 # %%
 import pandas as pd
