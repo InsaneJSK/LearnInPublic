@@ -42,7 +42,7 @@ def search(query, number_of_results=3):
   distances, similar_item_ids = index.search(np.float32([query_embed]), number_of_results)
   texts_np = np.array(texts)
   results = pd.DataFrame(data={'texts':texts_np[similar_item_ids[0]], 'distances':distances[0]})
-  print(f'Query: "{query}"\nNearest neighbours:')
+  # print(f'Query: "{query}"\nNearest neighbours:')
   return results
 
 query = "how precise was the science?"
@@ -78,3 +78,33 @@ def keyword_search(query, top_k = 3, num_candidates = 15):
     print("\t{:.3f}\t{}".format(hit['score'], texts[hit['corpus_id']].replace("\n", " ")))
 
 keyword_search(query = "How precise was the science")
+
+query = "how precise was the science?"
+results = co.rerank(query = query, documents = texts, top_n=3, return_documents=True)
+results.results
+
+for idx, result in enumerate(results.results):
+  print(idx, result.relevance_score, result.document.text)
+
+def keyword_and_rerank_search(query, top_k=3, num_candidates=10):
+  print("Input question: ", query)
+  bm25_scores = bm25.get_scores(bm25_tokenizer(query))
+  top_n = np.argpartition(bm25_scores, -num_candidates)[-num_candidates:]
+  bm25_hits = [{'corpus_id': idx, 'score':bm25_scores[idx]} for idx in top_n]
+  bm25_hits = sorted(bm25_hits, key=lambda x: x['score'], reverse=True)
+  print("Top-3 lexical search (BM25) hits")
+  for hit in bm25_hits[0:top_k]:
+    print("\t{:.3f}\t{}".format(hit['score'], texts[hit['corpus_id']].replace("\n", " ")))
+  docs = [texts[hit['corpus_id']] for hit in bm25_hits]
+  print(f"\nTop-3 hits by rank-API ({len(bm25_hits)} BM25 hits re-ranked)")
+  results = co.rerank(query = query, documents = docs, top_n=top_k, return_documents=True)
+  for hit in results.results:
+    print("\t{:.3f}\t{}".format(hit.relevance_score, hit.document.text.replace("\n", " ")))
+
+keyword_and_rerank_search(query=query)
+
+query = "income generated"
+results = search(query)
+docs_dict = [{'text': text} for text in results['texts']]
+response = co.chat(message = query, documents = docs_dict)
+print(response.text)
