@@ -1,48 +1,24 @@
-# ---
-# jupyter:
-#   jupytext:
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.17.1
-#   kernelspec:
-#     display_name: base
-#     language: python
-#     name: python3
-# ---
-
-# %% [markdown]
-# ## Async Programming
-
-# %%
 from multiprocessing import Process
+from threading import Thread
+import asyncio
+import time
+import aiohttp
 
-
-# %%
 def myfunc():
     pass
 
-
-# %%
 procs = []
 for _ in range(5):
     procs.append(Process(target=myfunc, args=()))
 
-# %%
 #For starting those functions
 for proc in procs:
     proc.start()
 
-# %%
 for proc in procs:
     proc.join()
 
-# %% [markdown]
 # ## Multi Threading
-
-# %%
-from threading import Thread
 
 # %%
 f1 = Thread(target=myfunc)
@@ -77,12 +53,7 @@ co.send("Get the hell lost")
 # %%
 co.close()
 
-# %% [markdown]
 # ## AsyncIO
-
-# %%
-import asyncio
-
 
 # %%
 async def main():
@@ -97,7 +68,9 @@ type(main())
 # %%
 if __name__ == "__main__":
     try:
-        asyncio.run(main())  #The line that should work in a py-kernel but due to how main loop works in ipy, it doesn't work in jupyter
+        asyncio.run(main())  #The line that should work in a py-kernel 
+        # but due to how main loop works in ipy
+        # it doesn't work in jupyter
     except RuntimeError:
         await main()
 
@@ -108,8 +81,6 @@ async def waiter(n):
     print(f"Waited for {n} sec")
 
 
-# %%
-import time
 async def main():
     print(time.strftime('%X'))
     await waiter(2)
@@ -136,10 +107,6 @@ async def main():
 # %%
 if __name__ == "__main__":
     await main()
-
-# %%
-import aiohttp
-
 
 # %%
 async def fetchfromgoogle():
