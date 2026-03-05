@@ -8,22 +8,28 @@ __pycache__/
 *.jpg
 *.cp311-win_amd64.*
 *.obj
+*.csv
 
 #Environments
 .env
 venv/
 .venv/
 
-#Datasets
-Python/cool-python-stuff/movie-recommender/ml-100k/*
-Python/cool-python-stuff/data/*
-Python/cool-python-stuff/svm/img-classification/images/
-Python/mini-projects/expense-tracker/
-Python/cool-python-stuff/nltk-nlp/NLP-Live-main/*
-Python/PyTorch/bean-leaf-lesion-pretrained/bean-leaf-lesions-classification/*
-
 .jupyter/*
-Python/mini-projects/hack4delhi/delhi_water_logging_areas.csv
 
 #Extras
 HTML-CSS/
+mini-projects/expense-tracker/
+mini-projects/LifeBot/
+misc-python/pylint_report.txt
+
+#Datasets
+misc-python/movie-recommender/ml-100k/*
+misc-python/data/*
+misc-python/svm/img-classification/images/
+misc-python/nltk-nlp/NLP-Live-main/*
+PyTorch/bean-leaf-lesion-pretrained/bean-leaf-lesions-classification/*
+mini-projects/hack4delhi/*.geojson
+mini-projects/hack4delhi/*.html
+mini-projects/kdsh/Kdsh/books/*.txt
+misc-python/nltk-nlp/*.txt
