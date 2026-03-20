@@ -32,4 +32,8 @@ class Rectangle(Shape):
         return self.length * self.width
     def perimeter(self) -> float:
         return 2 * (self.length + self.width)
-    
+
+
+class Square(Rectangle):
+    def __init__(self, side: float):
+        super().__init__(side, side)
