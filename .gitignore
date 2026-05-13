@@ -33,6 +33,7 @@ mini-projects/hack4delhi/*.geojson
 mini-projects/hack4delhi/*.html
 mini-projects/kdsh/Kdsh/books/*.txt
 misc-python/nltk-nlp/*.txt
+RAG/data/*
 
 #DSA
 some-dsa-things/*
