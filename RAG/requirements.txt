@@ -3,3 +3,5 @@ langchain-core
 langchain-community
 pypdf
 pymupdf
+langchain-groq
+python-dotenv
