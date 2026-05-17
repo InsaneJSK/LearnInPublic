@@ -105,3 +105,88 @@ right = sp.limit(y, x, sp.oo)
 left = sp.limit(y, x, -sp.oo)
 print(f"Limit as x approaches infinity: {right}")
 print(f"Limit as x approaches negative infinity: {left}")
+
+# %% [markdown]
+# ## Slope
+
+# %%
+x_value = 1
+y_value = x_value**2
+
+h = 0.3
+y_value_2 = (x_value + h)**2
+
+zoom = 10
+xmin = x_value - zoom
+xmax = x_value + zoom
+ymin = y_value - zoom
+ymax = y_value + zoom
+
+x = np.linspace(xmin, xmax, 400)
+y = x**2
+
+slope = (y_value_2 - y_value) / h
+print(f"Slope of the secant line: {slope}")
+
+plt.axis([xmin, xmax, ymin, ymax])
+plt.plot(x, y, label='y = x^2')
+plt.plot([x_value, x_value + h], [y_value, y_value_2], 'ro-', label='Secant Line')
+plt.axhline(0, color='black', lw=0.5, ls='--')  # Add x-axis
+plt.axvline(0, color='black', lw=0.5, ls='--')  # Add y-axis
+plt.title("Graph of y = x^2 with Secant Line")
+plt.show()
+
+# %%
+x_value = 1
+y_value = x_value**2
+
+h = 0.3
+y_value_2 = (x_value + h)**2
+
+for a in range(1, 11):
+    h = 10**(-a)
+    y_value_2 = (x_value + h)**2
+    slope = (y_value_2 - y_value) / h
+    print(f"h: {h}, Slope of the secant line: {slope}")
+
+# %%
+x_value = 1
+y_value = x_value**3
+
+h = 0.3
+y_value_2 = (x_value + h)**3
+
+zoom = 10
+xmin = x_value - zoom
+xmax = x_value + zoom
+ymin = y_value - zoom
+ymax = y_value + zoom
+
+x = np.linspace(xmin, xmax, 400)
+y = x**3
+
+slope = (y_value_2 - y_value) / h
+print(f"Slope of the secant line: {slope}")
+
+plt.axis([xmin, xmax, ymin, ymax])
+plt.plot(x, y, label='y = x^3')
+plt.plot([x_value, x_value + h], [y_value, y_value_2], 'ro-', label='Secant Line')
+plt.axhline(0, color='black', lw=0.5, ls='--')  # Add x-axis
+plt.axvline(0, color='black', lw=0.5, ls='--')  # Add y-axis
+plt.title("Graph of y = x^3 with Secant Line")
+plt.show()
+
+# %%
+x_value = 1
+y_value = x_value**3
+
+h = 0.3
+y_value_2 = (x_value + h)**3
+
+for a in range(1, 11):
+    h = 10**(-a)
+    y_value_2 = (x_value + h)**3
+    slope = (y_value_2 - y_value) / h
+    print(f"h: {h}, Slope of the secant line: {slope}")
+
+# %%
