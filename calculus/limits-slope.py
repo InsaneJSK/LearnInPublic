@@ -188,5 +188,3 @@ for a in range(1, 11):
     y_value_2 = (x_value + h)**3
     slope = (y_value_2 - y_value) / h
     print(f"h: {h}, Slope of the secant line: {slope}")
-
-# %%
