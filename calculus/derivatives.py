@@ -120,4 +120,78 @@ for y_loop in y_val:
     ans_y = ans_x.subs(y, y_loop)
     print(f"At x = {x_val} and y = {y_loop}, the slope of the tangent line is: {ans_y}")
 
+# %% [markdown] vscode={"languageId": "bat"}
+# #### Example
+
+# %%
+import sympy as sp
+x, y = sp.symbols('x y')
+eq = x**3 - 9*x**2 + 24
+eq
+
+# %%
+sp.plot(eq, ylim = [-100,100])
+
+# %%
+derivative = sp.diff(eq, x)
+derivative
+
+# %%
+x_val = 0
+ans = derivative.subs(x, x_val)
+print(f"The slope of the tangent line at x = {x_val} is: {ans}")
+
+# %%
+first = sp.diff(eq, x)
+first
+
+# %%
+zeros = sp.solve(first, x)
+print(f"The critical points are: {zeros}")
+
+# %%
+sp.plot(eq, derivative, ylim = [-100,100])
+
+# %%
+second = sp.diff(first, x)
+second
+
+# %%
+x_val = 6
+ans = second.subs(x, x_val)
+print(f"The second derivative at x = {x_val} is: {ans}")
+
+# %%
+zeros = sp.solve(second, x)
+print(f"The inflection points are: {zeros}")
+
+# %%
+sp.plot(eq, first, second, ylim = [-100,100])
+
+# %% [markdown]
+# #### Financial Applications
+
+# %%
+# Maximum Revenue Problem
+x_price1, y_demand1 = 6, 480
+x_price2, y_demand2 = 7, 476
+
+slope = (y_demand2 - y_demand1) / (x_price2 - x_price1)
+y_intercept = y_demand1 - slope * x_price1
+print(f"The demand function is: y = {slope}*x + {y_intercept}")
+
+# %%
+import sympy as sp
+x, y = sp.symbols('x y')
+demand = slope * x + y_intercept
+revenue = x * demand
+revenue
+
+# %%
+max_revenue = sp.diff(revenue, x)
+max_x = sp.solve(max_revenue, x)
+max_y = demand.subs(x, max_x[0])
+print(f"The price that maximizes revenue is: {max_x[0]}")
+print(f"The maximum revenue is: {max_y * max_x[0]}")
+
 # %%
